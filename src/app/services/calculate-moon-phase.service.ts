@@ -15,7 +15,7 @@ export class CalculateMoonPhaseService {
     );
 
     let moonPhase: string;
-    let meditation = '-';
+    let meditation = ' ';
 
     if (currentDay === 0) {
       moonPhase = 'Νέα Σελήνη';

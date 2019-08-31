@@ -12,7 +12,8 @@ export class AppComponent {
   meditation: string;
 
   constructor(private calculateMoonPhaseService: CalculateMoonPhaseService) {
-    const moonData = calculateMoonPhaseService.calculatePhase(new Date('2019.08.06'));
+    // const moonData = calculateMoonPhaseService.calculatePhase(new Date(2019, 8, 28));
+    const moonData = calculateMoonPhaseService.calculatePhase(new Date());
     this.day = moonData.dayFromNewMoon;
     this.moonPhase = moonData.moonPhase;
     this.meditation = moonData.meditation;
